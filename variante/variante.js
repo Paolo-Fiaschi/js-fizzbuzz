@@ -18,23 +18,34 @@
 
 // senza variante d'appoggio, stampo il log modificato per ogni condizione
 
+var fizzbuzz = "FizzBuzz";
+var fizz = "Fizz";
+var buzz = "Buzz";
+var result;
+
+
   for (var i = 1; i <= 100; i++) {
 
+    result = document.getElementById("list").innerHTML;
+    document.getElementById("list").innerHTML = result + "<li>" + i + "</li>" + "<li>" + fizzbuzz + "</li>" + "<li>" + buzz + "</li>" + "<li>" + fizz + "</li>";
+
+
     if (i % 3 === 0 && i % 5 === 0) {
-        
-      console.log("FizzBuzz");
+      console.log(fizzbuzz);
+      document.getElementById("list").innerHTML = result + "<li>" + fizzbuzz + "</li>";
         
     }else if (i % 3 === 0) {
-    
-       console.log("Fizz");
+       console.log(fizz);
+       document.getElementById("list").innerHTML = result + "<li>" + fizz + "</li>";
 
     } else if (i % 5 === 0) {
-        
-      console.log("Buzz");
-    
+      console.log(buzz);
+      document.getElementById("list").innerHTML = result + "<li>" + buzz + "</li>";
+
     }else{
       
         console.log(i);
+        document.getElementById("list").innerHTML = result + "<li>" + i + "</li>";
 
     }
 
