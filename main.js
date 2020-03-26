@@ -41,6 +41,7 @@ for (var i = 1; i <= 100; i++) {
 
     console.log(result);
 
-    // i = document.getElementById("lista").innerHTML;
     document.getElementById("lista").innerHTML = stamp + "<li>" + result + "</li>";
   }
+
+
