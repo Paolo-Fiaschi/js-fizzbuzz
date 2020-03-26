@@ -16,27 +16,26 @@
 
 // se il numero diviso  3 e 5 dà un intero stampa fizzbuzz
 
-// Usando una variabile d'appoggio, la associo ad ogni valore di ciascuna condizione per poi stampare un unico log alla fine
+// senza variante d'appoggio, stampo il log modificato per ogni condizione
 
-var result;
-
-for (var i = 1; i <= 100; i++) {
-
-    result = i;
+  for (var i = 1; i <= 100; i++) {
 
     if (i % 3 === 0 && i % 5 === 0) {
-        result = "FizzBuzz";
-
+        
+      console.log("FizzBuzz");
+        
     }else if (i % 3 === 0) {
     
-       result = "Fizz"; 
+       console.log("Fizz");
 
     } else if (i % 5 === 0) {
         
-        result = "Buzz";
+      console.log("Buzz");
+    
+    }else{
+      
+        console.log(i);
 
     }
-    console.log(result);
-    
-  }
 
+  }
